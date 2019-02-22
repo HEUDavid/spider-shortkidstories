@@ -13,7 +13,7 @@ from bs4 import BeautifulSoup
 def wordpressPost(data):
     if not verifyPost(data["title"]):
         if len(data["body"]) > 100:## 内容长度验证      
-            wp = Client('https://xcx.mdavid.cn/xmlrpc.php', 'David', 'HEUdw2015096119')
+            wp = Client('https://xcx.mdavid.cn/xmlrpc.php', '', '')
             post = WordPressPost()
             post.title = data["title"]
             post.content = data["body"]
